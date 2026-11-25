@@ -1,0 +1,131 @@
+.display {
+  background: #0f172a;
+  padding: 25px 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: right;
+  min-height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.previous-value {
+  color: #94a3b8;
+  font-size: 16px;
+  min-height: 24px;
+  margin-bottom: 8px;
+}
+
+.current-value {
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffffff;
+  overflow-wrap: anywhere;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.calc-button {
+  height: 65px;
+  border: none;
+  border-radius: 15px;
+  font-size: 21px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.number {
+  background: #334155;
+  color: white;
+}
+
+.number:hover {
+  background: #475569;
+}
+
+.operator {
+  background: #6366f1;
+  color: white;
+}
+
+.operator:hover {
+  background: #818cf8;
+}
+
+.special {
+  background: #475569;
+  color: #38bdf8;
+}
+
+.special:hover {
+  background: #64748b;
+}
+
+.calc-button:active {
+  transform: scale(0.94);
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    padding: 18px;
+  }
+
+  .calc-button {
+    height: 58px;
+  }
+
+  .current-value {
+    font-size: 30px;
+  }
+}
+
+.history-container {
+  margin-top: 25px;
+  border-top: 1px solid #334155;
+  padding-top: 18px;
+}
+
+.history-container h3 {
+  color: #f8fafc;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.empty-history {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  background: #334155;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.history-item span {
+  color: #cbd5e1;
+}
+
+.history-item strong {
+  color: #38bdf8;
+}
